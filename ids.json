@@ -1,5 +1,8 @@
 {
   "tblDisplist": "dl_id",
   "tblDriver": "dv_id",
-  "tblVehicle": "vh_id"
+  "tblVehicle": "vh_id",
+  "tblCustomer": "ct_id",
+  "tblShipper": "sp_id",
+  "tblCargo": "cg_id"
 }

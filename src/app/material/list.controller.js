@@ -28,7 +28,7 @@ export class ListController {
     }
     getList() {
       this.Restangular.all('tblDisplist').getList({
-        _expand: ['tblDriver'] // TODO 还有一些字段需要确定
+        _expand: ['tblDriver', 'tblShipper', 'tblCustomer', 'tblCargo'] // TODO 还有一些字段需要确定
       }).then((list) => {
         this.list = list;
       });

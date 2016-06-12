@@ -29,11 +29,11 @@
           md-checkbox
         td.number {{item.dl_num}}
         td.text 销售
-        td.number {{item.dl_date}}
+        td.number {{item.dl_date | date: 'yyyy-MM-dd'}}
         td.text 杭州有限公司
-        td.text 杭州优先公司
-        td.text 改性灵心
-        td.text iD
+        td.text {{item.tblCustomer.name}}
+        td.text {{item.tblCargo.name}}
+        td.text {{item.tblCargo.spec}}
         td.number 12.70
         td.number 12.12
         td.text 杭州沥青库
@@ -46,4 +46,4 @@
         td.text asdfasdf
         td.check 
           md-checkbox
-        td.number 2012-12-12 0:00:00
+        td.number {{item.MDT | date: 'yyyy-MM-dd HH:mm'}}

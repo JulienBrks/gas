@@ -1,8 +1,9 @@
 export class CreateController {
-    constructor($mdDialog, Restangular, $log, $scope) {
+    constructor($mdDialog, Restangular, $log, $scope, $state) {
         'ngInject';
 
         this.model = {};
+        this.$state = $state;
         this.$mdDialog = $mdDialog;
         this.Restangular = Restangular;
         this.$log = $log;
@@ -91,6 +92,7 @@ export class CreateController {
     }
     createSuccess() {
       this.$mdDialog.hide();
+      this.$state.reload();
     }
     createFail() {
       alert('创建失败!');
