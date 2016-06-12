@@ -17,5 +17,5 @@ export function routerConfig ($stateProvider, $urlRouterProvider) {
     }
   });
 
-  $urlRouterProvider.otherwise('/');
+  $urlRouterProvider.otherwise('/material');
 }
