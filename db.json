@@ -1,0 +1,251 @@
+{
+  "tblDisplist": [
+    {
+      "dl_id": 1,
+      "sm_id": "",
+      "dl_date": "",
+      "dl_num": "",
+      "sp_id": "",
+      "ct_id": "",
+      "ct_id2": "",
+      "cg_id": "",
+      "cg_id2": "",
+      "adt": "",
+      "gwt": "",
+      "tare": "",
+      "out": "",
+      "nwt": "",
+      "recvq": "",
+      "dt_id": "",
+      "tc_id": "",
+      "vh_id": "",
+      "dv_id": [
+        1,
+        2
+      ],
+      "shift": "",
+      "self": "",
+      "strip": "",
+      "note": "",
+      "invalid": "",
+      "checked": "",
+      "CTT": "",
+      "MDT": ""
+    },
+    {
+      "shift": true,
+      "self": true,
+      "sp_id": 1,
+      "ct_id2": 1,
+      "ct_id": 1,
+      "cg_id": 1,
+      "cg_id2": 2,
+      "gwt": 2,
+      "tare": 1,
+      "adt": 1,
+      "tc_id": 1,
+      "dv_id": 1,
+      "strip": 12,
+      "dl_date": "2016-06-10T16:00:00.000Z",
+      "CTT": "2016-06-11T14:34:01.691Z",
+      "MDT": "2016-06-11T14:34:01.691Z",
+      "dl_id": 2
+    },
+    {
+      "shift": true,
+      "self": true,
+      "sp_id": 1,
+      "ct_id2": 1,
+      "ct_id": 1,
+      "cg_id": 1,
+      "cg_id2": 2,
+      "gwt": 2,
+      "tare": 1,
+      "adt": 1,
+      "tc_id": 1,
+      "dv_id": 1,
+      "strip": 12,
+      "note": "asdfsdfa",
+      "dl_date": "2016-06-10T16:00:00.000Z",
+      "CTT": "2016-06-11T14:34:45.483Z",
+      "MDT": "2016-06-11T14:34:45.483Z",
+      "dl_id": 3
+    },
+    {
+      "shift": true,
+      "self": true,
+      "sp_id": 1,
+      "ct_id2": 1,
+      "ct_id": 1,
+      "cg_id": 2,
+      "cg_id2": 2,
+      "gwt": 2,
+      "tare": 1,
+      "adt": 1,
+      "tc_id": 1,
+      "dv_id": 1,
+      "strip": 12,
+      "note": 12,
+      "dl_date": "2016-06-10T16:00:00.000Z",
+      "CTT": "2016-06-11T14:36:45.038Z",
+      "MDT": "2016-06-11T14:36:45.040Z",
+      "dl_id": 4
+    },
+    {
+      "shift": true,
+      "self": true,
+      "sp_id": 1,
+      "ct_id2": 1,
+      "ct_id": 1,
+      "cg_id": 1,
+      "cg_id2": 1,
+      "gwt": 2,
+      "tare": 1,
+      "adt": 1,
+      "tc_id": 2,
+      "dv_id": 2,
+      "strip": 1,
+      "note": 12,
+      "dl_date": "2016-06-10T16:00:00.000Z",
+      "CTT": "2016-06-11T14:37:50.337Z",
+      "MDT": "2016-06-11T14:37:50.338Z",
+      "dl_id": 5
+    },
+    {
+      "shift": true,
+      "self": true,
+      "sp_id": 1,
+      "ct_id2": 1,
+      "ct_id": 1,
+      "cg_id": 1,
+      "cg_id2": 2,
+      "gwt": 2,
+      "tare": 1,
+      "adt": 1,
+      "tc_id": 1,
+      "dv_id": 1,
+      "strip": 1,
+      "note": 2,
+      "dl_date": "2016-06-13T16:00:00.000Z",
+      "CTT": "2016-06-11T14:39:50.818Z",
+      "MDT": "2016-06-11T14:39:50.824Z",
+      "dl_id": 6
+    },
+    {
+      "shift": true,
+      "self": true,
+      "sp_id": 1,
+      "ct_id2": 1,
+      "ct_id": 1,
+      "cg_id": 1,
+      "cg_id2": 1,
+      "gwt": 2,
+      "tare": 1,
+      "adt": 1,
+      "tc_id": 2,
+      "dv_id": 2,
+      "strip": 12,
+      "note": 12,
+      "dl_date": "2016-06-11T16:00:00.000Z",
+      "CTT": "2016-06-12T15:53:16.167Z",
+      "MDT": "2016-06-12T15:53:16.169Z",
+      "undefined": "cc6087a8-b9d9-43e0-adf1-28cf0be330ef"
+    }
+  ],
+  "tblDriver": [
+    {
+      "dv_id": 1,
+      "name": "驾驶员1"
+    },
+    {
+      "dv_id": 2,
+      "name": "驾驶员2"
+    }
+  ],
+  "tblShipper": [
+    {
+      "sp_id": 1,
+      "name": "地址1",
+      "num": 1
+    },
+    {
+      "sp_id": 2,
+      "name": "地址2",
+      "num": 2
+    }
+  ],
+  "tblCustomer": [
+    {
+      "ct_id": 1,
+      "name": "单位1"
+    },
+    {
+      "ct_id": 2,
+      "name": "单位2"
+    }
+  ],
+  "tblCargo": [
+    {
+      "cg_id": 1,
+      "name": "商品1",
+      "spec": "规格1"
+    },
+    {
+      "cg_id": 2,
+      "name": "商品2",
+      "spec": "规格2"
+    }
+  ],
+  "tblTransCo": [
+    {
+      "tc_id": 1,
+      "name": "承运单位1"
+    },
+    {
+      "tc_id": 2,
+      "name": "承运单位2"
+    }
+  ],
+  "tblVehicle": [
+    {
+      "vh_id": 1,
+      "num": "车辆1",
+      "dv_id": 2
+    },
+    {
+      "vh_id": 2,
+      "num": "车辆2",
+      "dv_id": 1
+    }
+  ],
+  "tblLink_Co_SheetCo": [
+    {
+      "ct_id": 1,
+      "ct_id2": 1
+    },
+    {
+      "ct_id": 2,
+      "ct_id2": 2
+    }
+  ],
+  "tblLink_TransCo_Vehicle": [
+    {
+      "tc_id": 1,
+      "vh_id": 1
+    },
+    {
+      "tc_id": 2,
+      "vh_id": 2
+    }
+  ],
+  "tblLInk_TransCo_Driver": [
+    {
+      "tc_id": 1,
+      "dv_id": 1
+    },
+    {
+      "tc_id": 2,
+      "dv_id": 2
+    }
+  ]
+}

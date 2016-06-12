@@ -1,0 +1,8 @@
+.filter
+  h2.title 沥青发运明细表
+  .content
+    .item
+      md-datepicker(ng-model="meterialList.filter.date")
+    md-input-container.md-icon-float.md-has-icon.md-input-has-value.dispatch-place-container
+      md-icon.dispatch-place-icon(md-svg-src="/assets/svgs/dispatch-place.svg")
+      md-select.dispatch-place(type="text", id="dispatch-place", ng-model="meterialList.filter.dispatchPlace")

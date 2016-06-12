@@ -1,0 +1,5 @@
+{
+  "tblDisplist": "dl_id",
+  "tblDriver": "dv_id",
+  "tblVehicle": "vh_id"
+}

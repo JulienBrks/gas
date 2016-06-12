@@ -1,0 +1,86 @@
+md-dialog.create(ng-cloak)
+  md-toolbar
+    .md-toolbar-tools
+      h2 汽车发料单
+      div(flex)
+      md-button.md-icon-button(ng-click="createController.cancel()")
+        md-icon(md-svg-src="/assets/svgs/close.svg")
+  md-dialog-content
+    .md-dialog-content
+      .title
+        h2 汽车发料单
+        .checks
+          md-input-container.md-block.important-option
+            md-checkbox(ng-model="createController.model.shift") 转库
+          md-input-container.md-block.important-option
+            md-checkbox(ng-model="createController.model.self") 自提
+      div(layout="row")
+        md-input-container(flex="70")
+          label 发货地
+          md-select(ng-model="createController.model.sp" md-on-open="createController.getSelectOptions('tblShipper', 'sps')")
+            md-option(ng-value="sp" ng-repeat="sp in createController.model.sps") {{sp.name}}
+        .number-date(flex="30")
+          md-input-container
+            label 编号
+            input(type="text" ng-model="createController.model.sp.num" readonly)
+          md-datepicker(ng-model="createController.model.dl_date")
+      md-input-container.md-block
+        label 收货单位
+        md-select(ng-model="createController.model.ct2" md-on-open="createController.getSelectOptions('tblCustomer', 'cts2')")
+          md-option(ng-value="ct" ng-repeat="ct in createController.model.cts2") {{ct.name}}
+      md-input-container.md-block
+        label 开票单位
+        md-select(ng-model="createController.model.ct" md-on-open="createController.getRelateSelectOptions('ct_id', 'cts', 'ct', 'tblCustomer', 'ct_id', 'ct2', 'cts2', 'tblLink_Co_SheetCo')")
+          md-option(ng-value="ct" ng-repeat="ct in createController.model.cts") {{ct.name}}
+      div(layout="row")
+        md-input-container.md-block(flex="30")
+          label 到达地
+          md-select(ng-model="createController.model.dt" md-on-open="createController.getSelectOptions('tblShipper', 'dts')")
+            md-option(ng-value="dt" ng-repeat="dt in createController.model.dts") {{dt.name}}
+        md-input-container.md-block(flex="30" flex-offset="5")
+          label 商品名称
+          md-select(ng-model="createController.model.cg" md-on-open="createController.getSelectOptions('tblCargo', 'cgs')")
+            md-option(ng-value="cg" ng-repeat="cg in createController.model.cgs") {{cg.name}}
+        md-input-container.md-block(flex="30" flex-offset="5")
+          label 规格
+          input(type="text" ng-model="createController.model.cg.spec" readonly)
+      div(layout="row")
+        md-input-container.md-block(flex="30" flex-offset="35")
+          label 库存商品
+          md-select(ng-model="createController.model.cg2" md-on-open="createController.getSelectOptions('tblCargo', 'cgs2')")
+            md-option(ng-value="cg" ng-repeat="cg in createController.model.cgs2") {{cg.name}}
+        md-input-container.md-block(flex="30" flex-offset="5")
+          label 规格
+          input(type="text" ng-model="createController.model.cg2.spec" readonly)
+      div(layout="row")
+        md-input-container.md-block(flex="30")
+          label 毛重
+          input(type="text" ng-model="createController.model.gwt")
+        md-input-container.md-block(flex="30" flex-offset="5")
+          label 皮重
+          input(type="text" ng-model="createController.model.tare")
+        md-input-container.md-block(flex="30" flex-offset="5")
+          label 净重
+          input(type="text" ng-model="createController.model.adt")
+      md-input-container.md-block
+        label 承运单位
+        md-select(ng-model="createController.model.tc" md-on-open="createController.getSelectOptions('tblTransCo', 'tcs')")
+          md-option(ng-value="tc" ng-repeat="tc in createController.model.tcs") {{tc.name}}
+      div(layout="row")
+        md-input-container.md-block(flex="30")
+          label 车辆号
+          md-select(ng-model="createController.model.vh" md-on-open="createController.getRelateSelectOptions('vh_id', 'vhs', 'vh', 'tblVehicle', 'tc_id', 'tc', 'tcs', 'tblLink_TransCo_Vehicle')")
+            md-option(ng-value="vh" ng-repeat="vh in createController.model.vhs") {{vh.num}}
+        md-input-container.md-block(flex="30" flex-offset="5")
+          label 驾驶员
+          md-select(ng-model="createController.model.dv" md-on-open="createController.getRelateSelectOptions('dv_id', 'dvs', 'dv', 'tblDriver', 'tc_id', 'tc', 'tcs', 'tblLInk_TransCo_Driver')")
+            md-option(ng-value="dv" ng-repeat="dv in createController.model.dvs") {{dv.name}}
+        md-input-container.md-block(flex="30" flex-offset="5")
+          label 封条编号
+          input(type="text" ng-model="createController.model.strip")
+      md-input-container.md-block
+        label 备注
+        textarea(name="" cols="30" rows="10" ng-model="createController.model.note")
+  md-dialog-actions(layout="row")
+    md-button(md-autofocus ng-click="createController.create()") 创建
+    md-button(ng-click="createController.cancel()") 取消

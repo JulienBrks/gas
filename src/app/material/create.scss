@@ -1,0 +1,23 @@
+@import '../components/scssMixin/clearfix.scss';
+.create {
+  width: 100%;
+  .title {
+    @include clearfix;
+    h2 {
+      text-align: center;
+    }
+  }
+  .checks {
+    float: right;
+  }
+  .number-date {
+    @include clearfix;
+    & > * {
+      float: right;
+    }
+  }
+  .divider {
+    height: 1px;
+    background-color: #ddd;
+  }
+}

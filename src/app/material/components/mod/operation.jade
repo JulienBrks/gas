@@ -1,0 +1,14 @@
+.operation
+  md-button.md-icon-button.op(title="添加", ng-click="listController.showCreateDialog($event)")
+    md-icon(md-svg-src="/assets/svgs/create.svg")
+  md-button.md-icon-button.op(title="编辑")
+    md-icon(md-svg-src="/assets/svgs/edit.svg")
+  md-button.md-icon-button.op(title="删除")
+    md-icon.delete(md-svg-src="/assets/svgs/delete.svg")
+  .op-group
+    md-button.md-icon-button.op(title="废弃")
+      md-icon(md-svg-src="/assets/svgs/trash.svg")
+    md-button.md-icon-button.op(title="恢复")
+      md-icon(md-svg-src="/assets/svgs/restore.svg")
+  md-input-container.search
+    input.md-input(placeholder="查询单据号")

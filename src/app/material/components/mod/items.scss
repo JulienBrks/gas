@@ -1,0 +1,6 @@
+@import '../../../components/scssMixin/table';
+.items {
+  & > table {
+    @include table;
+  }
+}
