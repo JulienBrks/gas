@@ -18,7 +18,7 @@ export class ListController {
     showCreateDialog(ev) {
         this.$mdDialog.show({
             controller: this.MaterialCreateController,
-            templateUrl: '/app/material/create.html',
+            templateUrl: 'app/material/create.html',
             parent: angular.element(this.$document.body),
             targetEvent: ev,
             clickOutsideToClose: true,
